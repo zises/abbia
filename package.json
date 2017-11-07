@@ -34,5 +34,8 @@
     "yargs": "^4.7.0",
     "gulp-babel": "^6.1.2",
     "gh-pages": "^0.11.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^1.4.0"
   }
 }

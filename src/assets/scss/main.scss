@@ -10,7 +10,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #E5E3E6;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -36,4 +36,52 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+body {
+  background-color: $background-color;
+}
+// Menu
+.menu-items {
+  text-transform: uppercase;
+  li:not(:last-child) {
+    margin-bottom: 2em
+  }
+  span {
+    font-weight: bold;
+  }
+}
+// Home Page
+.home-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.holder {
+  height: 100vh;
+  max-width: 100%;
+}
+.triangle1, .triangle2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: black;
+  transition: all 1s;
+  &:hover {
+      -webkit-filter: brightness(55%);
+  }
+}
+.holder {
+  .triangle1 {
+    background: url("https://placeimg.com/640/480/any");
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    float: left;
+  }
+  .triangle2 {
+    background: url("../images/bags.png") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
 }
