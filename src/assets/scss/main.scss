@@ -44,8 +44,16 @@ body {
 // Menu
 .menu-items {
   text-transform: uppercase;
+  padding: 2em;
+  img {
+    max-width: 200px;
+  }
+  li {
+    margin-bottom: 2em;
+    font-size: 1.7em;
+  }
   li:not(:last-child) {
-    margin-bottom: 2em
+    margin-bottom: 3em
   }
   span {
     font-weight: bold;
