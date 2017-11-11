@@ -1,0 +1,50 @@
+/*
+The main SCSS file for everything, yep
+*/
+body {
+  background-color: #E5E3E6; }
+
+.menu-items {
+  text-transform: uppercase;
+  padding: 2em; }
+  .menu-items img {
+    max-width: 200px; }
+  .menu-items li {
+    margin-bottom: 2em;
+    font-size: 1.7em; }
+  .menu-items li:not(:last-child) {
+    margin-bottom: 3em; }
+  .menu-items span {
+    font-weight: bold; }
+
+.home-column {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.holder {
+  height: 100vh;
+  max-width: 100%; }
+
+.triangle1, .triangle2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: black;
+  transition: all 1s; }
+  .triangle1:hover, .triangle2:hover {
+    -webkit-filter: brightness(55%); }
+
+.holder .triangle1 {
+  background: url("https://placeimg.com/640/480/any");
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  float: left; }
+
+.holder .triangle2 {
+  background: url("../images/bags.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%); }
+
+/*# sourceMappingURL=style.css.map */
