@@ -4,76 +4,58 @@ layout: default
 
 <div class="is-hidden-desktop">
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div id="menu" role="navigation">
-        <div class="brand">&Aopf;</div>
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
+    <div role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span class="span"></span>
+        <span class="span"></span>
+        <span class="span"></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu" class="mobile-menu-items">
+          <div class="mobile-menu-wrapper">
+            {% include menu-items.html%}
+            <div class="content has-text-centered footer-social">
+              {% include social.html%}
+            </div>
+          </div>
         </ul>
+      </div>
     </div>
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        <img src="assets/images/black_logo.png" alt="Abbia" width="112" height="28">
       </a>
     </div>
   </nav>
-  <div class="top-images">
-    <img src="assets/images/bags.png" alt="">
+  <div class="mobile-images">
+    <div class="top-images">
+      <img src="assets/images/bags.png" alt="">
+    </div>
+    <div class="top-images">
+      <img src="assets/images/worker.jpeg" alt="">
+    </div>
   </div>
-  <div class="top-images">
-    <img src="assets/images/worker.jpeg" alt="">
-  </div>
-
   <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
+    <div class="content has-text-centered footer-social">
+      {% include social.html%}
     </div>
   </div>
 </footer>
 </div>
-<div class="columns is-gapless is-hidden-touch">
-  <div class="column is-3 home-column is-hidden-touch">
-      <ul class="menu-items">
-        <li><img src="assets/images/black_logo.png" alt=""></li>
-        <li><span>Learn</span> More</li>
-        <li><span>Sample</span> Beans</li>
-        <li><span>Give</span> Feedback</li>
-        <li><span>Contact</span> Us</li>
-      </ul>
-  </div>
-  <div class="column is-7">
-    <div class="holder">
-      <a href="http://www.google.com" target="_blank">
-        <div class="triangle1">
-        </div>
-      </a>
-      <div class="triangle2">
-
-      </div>
-    </div>
-  </div>
-  <div class="column is-2 home-column is-hidden-touch">
-        <img class="sidebar-photo" src="assets/images/bags.png" alt="">
-      <div class="social">
-        <span class="icon">
-          <i class="fa fa-facebook"></i>
-        </span>
-      </div>
-      <div class="social">
-        <span class="icon">
-          <i class="fa fa-instagram"></i>
-        </span>
-      </div>
-      <div class="social">
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-      </div>
-  </div>
-</div>
+{% include desktop-home.html %}
