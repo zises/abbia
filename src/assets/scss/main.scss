@@ -37,6 +37,7 @@ body, .navbar, .footer {
 
 // Mobile
 .top-images {
+  height: 40vh;
   img {
     width: 100%;
   }
@@ -185,7 +186,7 @@ body, .navbar, .footer {
   padding: 50px;
   padding-top: 125px;
   padding-right: 30px;
-  background: #ededed;
+  background: $background-color;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -247,6 +248,13 @@ body, .navbar, .footer {
   align-items: center;
   flex-direction: column;
 }
+.sidebar-photos {
+  height: 33vh;
+}
+.social-column {
+  height: 67vh;
+  justify-content: space-around!important;
+}
 .social {
   background: #4C4E5A;
   border-radius: 100%;
@@ -276,11 +284,8 @@ body, .navbar, .footer {
   flex-direction: column;
   justify-content: space-between;
 }
-.holder {
-  height: 100vh;
-  max-width: 100%;
-}
-.triangle1, .triangle2 {
+
+.triangle {
   height: 100%;
   width: 100%;
   position: relative;
@@ -290,17 +295,21 @@ body, .navbar, .footer {
       -webkit-filter: brightness(55%);
   }
 }
+
+.triangle1 {
+  background: url("../images/worker.png");
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-size: cover;
+  float: left;
+}
+.triangle2 {
+  background: url("../images/bags.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
 .holder {
-  .triangle1 {
-    background: url("../images/worker.jpeg");
-    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    float: left;
-  }
-  .triangle2 {
-    background: url("../images/bags.png") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-  }
+  height: 100vh;
+  max-width: 100%;
 }
