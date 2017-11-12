@@ -58,7 +58,7 @@ gulp.task('scripts', () =>
 // 'gulp styles --prod' -- creates a CSS file from your SASS, adds prefixes and
 // then minwhenies, gzips and cache busts it. Does not create a Sourcemap
 gulp.task('styles', () =>
-  gulp.src('src/assets/scss/style.scss')
+  gulp.src('src/assets/scss/style.+(scss|sass)')
     .pipe(when(!argv.prod, sourcemaps.init()))
     .pipe(sass({
       precision: 10
