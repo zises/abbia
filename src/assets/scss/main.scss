@@ -24,196 +24,19 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 @import "bulma";
+@import "mobile";
 
 body, .navbar, .footer {
   background-color: $background-color;
 }
 
-.footer {
-  padding: 3rem 1.5rem 1rem;
+@media screen and (min-width: $desktop) {
+    body {
+        padding: 7vh 0;
+    }
 }
 
 
-
-// Mobile
-.top-images {
-  height: 40vh;
-  img {
-    width: 100%;
-  }
-}
-// Mobile Footer
-.footer-social {
-  display: flex;
-  justify-content: space-around;
-  .social {
-    font-size: 1.5rem!important;
-    height: 50px;
-    width: 50px;
-  }
-
-}
-// Mobile menu
-
-.navbar-brand {
-  float: right;
-  img {
-    width: auto;
-    max-height: 2.4rem;
-  }
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 4.25em;
-}
-
-.mobile-menu-items {
-  text-transform: uppercase;
-  padding: 0 2em;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  img {
-    max-width: 150px;
-  }
-  li {
-    font-size: 1.5em;
-  }
-  span {
-    font-weight: bold;
-  }
-}
-#menuToggle
-{
-  display: block;
-  line-height: 1.5;
-  padding: 0.5rem 1rem;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle .span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: black;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  padding-right: 30px;
-  background: $background-color;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
-.mobile-images {
-  line-height: 0px;
-}
 // Menu
 .menu-items {
   text-transform: uppercase;
@@ -222,19 +45,19 @@ body, .navbar, .footer {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 86vh;
   img {
     max-width: 300px;
   }
   li {
     margin-bottom: 2em;
-    font-size: 2.5em;
+    font-size: 2.5vw;
   }
   li:first-child {
-    margin-top: 1.5em;
+    margin-top: 1vh;
   }
   li:not(:last-child) {
-    margin-bottom: 3em;
+    margin-bottom: 2vh;
   }
   span {
     font-weight: bold;
@@ -249,10 +72,10 @@ body, .navbar, .footer {
   flex-direction: column;
 }
 .sidebar-photos {
-  height: 33vh;
+  height: 26vh;
 }
 .social-column {
-  height: 67vh;
+  height: 70vh;
   justify-content: space-around!important;
 }
 .social {
@@ -261,7 +84,7 @@ body, .navbar, .footer {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
   color: #fff;
   display: table-cell;
-  font-size: 3.4em;
+  font-size: 3.4vw;
   height: 60px;
   padding: 1em;
   text-align: center;
@@ -302,14 +125,24 @@ body, .navbar, .footer {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
   background-size: cover;
   float: left;
+  .tri-text-1 {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
 }
 .triangle2 {
   background: url("../images/bags.png") no-repeat center center fixed;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%);
+  .tri-text-2 {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+  }
 }
 .holder {
-  height: 100vh;
+  height: 86vh;
   max-width: 100%;
 }
