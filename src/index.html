@@ -3,45 +3,7 @@ layout: default
 ---
 
 <div class="is-hidden-desktop">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-
-        <!--
-        Some spans to act as a hamburger.
-
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span class="span"></span>
-        <span class="span"></span>
-        <span class="span"></span>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu" class="mobile-menu-items">
-          <div class="mobile-menu-wrapper">
-            {% include menu-items.html%}
-            <div class="content has-text-centered footer-social">
-              {% include social.html%}
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="/abbia/assets/images/black_logo.png" alt="Abbia" width="112" height="28">
-      </a>
-    </div>
-  </nav>
+  {% include mobile-menu.html %}
   <div class="mobile-images">
     <div class="top-images">
       <a href="http://www.google.com" target="_blank">
@@ -50,7 +12,7 @@ layout: default
         </div>
       </a>
       <div class="triangle2 triangle">
-        
+
       </div>
     </div>
     <div class="top-images">
@@ -66,7 +28,7 @@ layout: default
   <footer class="footer">
   <div class="container">
     <div class="content has-text-centered footer-social">
-      {% include social.html%}
+      {% include social.html %}
     </div>
   </div>
 </footer>

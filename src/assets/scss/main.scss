@@ -25,9 +25,13 @@ $on-laptop:        800px;
 
 @import "bulma";
 @import "mobile";
+@import "pages";
 
 body, .navbar, .footer {
   background-color: $background-color;
+}
+a {
+  color: #4A4A4A;
 }
 
 @media screen and (min-width: $desktop) {
