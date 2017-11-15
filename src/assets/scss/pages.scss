@@ -1,8 +1,26 @@
 
 .page-triangle{
-  background: url("../images/worker.png");
+  background: url("../images/learn.jpeg");
   -webkit-clip-path: polygon(0 0, 0 86%, 66% 0);
   clip-path: polygon(0 0, 0 86%, 66% 0);
   background-size: cover;
   float: left;
+  &:hover {
+    -webkit-filter: none;
+  }
+}
+
+.text-wrapper {
+  background-color: white;
+}
+
+.text {
+  position: absolute;
+  width: 30vw;
+  right: 5vw;
+  top: 24vh;
+  h1 {
+    margin-bottom: 6vh;
+  }
+
 }

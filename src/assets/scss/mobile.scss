@@ -22,9 +22,10 @@
   justify-content: space-around;
   align-items: center;
   .social {
-    font-size: 5.5vw!important;
+    font-size: 4.5vw!important;
     height: 50px;
     width: 50px;
+    padding: .9em;
     margin-bottom: 0!important;
   }
 
@@ -78,8 +79,8 @@
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: -7px;
   left: -5px;

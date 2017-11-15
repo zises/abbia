@@ -25,9 +25,12 @@ $on-laptop:        800px;
 
 @import "bulma";
 @import "mobile";
-@import "pages";
 
-body, .navbar, .footer {
+body {
+  background-color: white;
+}
+
+.columns, .navbar, .footer {
   background-color: $background-color;
 }
 a {
@@ -79,7 +82,7 @@ a {
   height: 26vh;
 }
 .social-column {
-  height: 70vh;
+  height: 60vh;
   justify-content: space-around!important;
 }
 .social {
@@ -97,9 +100,6 @@ a {
   justify-content: center;
   align-items: center;
   width: 60px;
-  &:last-child {
-    margin-bottom: 1.5em;
-  }
 }
 .social:hover {
   background: rgba(0, 0, 0, 0.6);
@@ -116,7 +116,6 @@ a {
   height: 100%;
   width: 100%;
   position: relative;
-  background: black;
   transition: all 1s;
   &:hover {
       -webkit-filter: brightness(55%);
@@ -150,3 +149,5 @@ a {
   height: 86vh;
   max-width: 100%;
 }
+
+@import "pages";
