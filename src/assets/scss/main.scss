@@ -112,6 +112,9 @@ a {
   justify-content: space-between;
 }
 
+.holder {
+  position: relative;
+}
 .triangle {
   height: 100%;
   width: 100%;
@@ -122,28 +125,40 @@ a {
   }
 }
 
+.tri-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  h2 {
+    text-transform: uppercase;
+    font-size: 4vw;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.tri-text-1 {
+  left: 13.5em;
+  bottom: 2em;
+  text-align: right;
+}
+.tri-text-2 {
+  right: 13em;
+  top: 2em;
+}
 .triangle1 {
   background: url("../images/worker.png");
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
   background-size: cover;
   float: left;
-  .tri-text-1 {
-    position: absolute;
-    right: 1em;
-    top: 1em;
-  }
 }
+
 .triangle2 {
   background: url("../images/bags.png") no-repeat center center fixed;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%);
-  .tri-text-2 {
-    position: absolute;
-    left: 1em;
-    bottom: 1em;
-  }
 }
 .triangle3 {
   background: url("../images/choc.jpg");
