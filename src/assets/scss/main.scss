@@ -145,6 +145,19 @@ a {
     bottom: 1em;
   }
 }
+.triangle3 {
+  background: url("../images/choc.jpg");
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background-size: cover;
+  float: left;
+}
+.triangle4 {
+  background: url("../images/bean.jpg");
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  background-size: cover;
+}
 .holder {
   height: 86vh;
   max-width: 100%;
