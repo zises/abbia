@@ -1,13 +1,35 @@
 // Mobile
-
-.footer {
-  height: 12vh;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  .container {
-    width: 100%;
+.tri-text-mobile {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  h2 {
+    text-transform: uppercase;
+    font-size: 6.5vw;
+    span {
+      font-weight: 900;
+    }
   }
+}
+
+.tri-text-1-mobile {
+  left: 8.5em;
+  top: 26em;
+  text-align: right;
+}
+.tri-text-2-mobile {
+  right: 7em;
+  top: 8em;
+}
+
+.tri-text-3-mobile {
+  left: 6.5em;
+  bottom: 29em;
+  text-align: right;
+}
+.tri-text-4-mobile {
+  right: 2em;
+  bottom: 17em;
 }
 
 .top-images {
@@ -17,6 +39,15 @@
   }
 }
 // Mobile Footer
+.footer {
+  height: 12vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  .container {
+    width: 100%;
+  }
+}
 .footer-social {
   display: flex;
   justify-content: space-around;

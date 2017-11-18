@@ -1,7 +1,11 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/AvenirNext.ttc) format("truetype");
+}
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Avenir", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -28,6 +32,7 @@ $on-laptop:        800px;
 
 body {
   background-color: white;
+  font-family: $base-font-family;
 }
 
 .columns, .navbar, .footer {
@@ -67,7 +72,7 @@ a {
     margin-bottom: 2vh;
   }
   span {
-    font-weight: bold;
+    font-weight: 900;
   }
 }
 // Home Right Sidebar
@@ -131,19 +136,23 @@ a {
   color: white;
   h2 {
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 4.5vw;
     span {
-      font-weight: bold;
+      font-weight: 900;
     }
   }
+  p {
+    font-size: 1.5vw;
+  }
 }
+
 .tri-text-1 {
   left: 13.5em;
   bottom: 2em;
   text-align: right;
 }
 .tri-text-2 {
-  right: 13em;
+  right: 10em;
   top: 2em;
 }
 .triangle1 {
