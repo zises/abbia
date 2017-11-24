@@ -62,7 +62,9 @@
 
 }
 // Mobile menu
-
+a.navbar-item:hover {
+  background-color: transparent!important;
+}
 .navbar-brand {
   float: right;
   img {
