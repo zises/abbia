@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
-<article class="post">
+<div class="is-hidden-desktop">
+  {% include mobile-menu.html %}
+  <div class="columns">
+    <div class="has-text-black">
+      <h1 class="is-capitalized has-text-weight-bold is-size-2">{{page.title}}</h1>
+      {{content}}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
+    </div>
   </div>
 
-</article>
+  {% include footer.html %}
+</div>
+
+<div class="columns is-gapless is-hidden-touch">
+  {% include desktop-sidebar.html %}
+  <div class="column is-9 text-wrapper">
+    <div class="page-triangle triangle">
+    </div>
+    <div class="text has-text-black">
+      <h1 class="is-capitalized has-text-weight-bold is-size-2">{{page.title}}</h1>
+      {{content}}
+    </div>
+  </div>
+</div>
