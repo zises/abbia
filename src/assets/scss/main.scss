@@ -1,9 +1,16 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: "Avenir";
-    src: url(../fonts/AvenirNext.ttc) format("truetype");
+  font-family: 'Avenir';
+  src: url(../fonts/AvenirLTStd-Light.otf) format("opentype");
+  font-weight: normal;
 }
+@font-face {
+  font-family: 'Avenir';
+  src: url(../fonts/AvenirLTStd-Heavy.otf) format("opentype");
+  font-weight: bold;
+}
+
 // Our variables
 $base-font-family: "Avenir", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
