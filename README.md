@@ -3,9 +3,15 @@
 >
 
 ## To get started
+```sh
 npm install gulp
+```
+```sh
 npm install
+```
+```sh
 bundle install
+```
 
 ```sh
 $ gulp

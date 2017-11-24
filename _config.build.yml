@@ -7,4 +7,4 @@ show_drafts: false
 # Removes the upper limit for posts generated
 limit_posts: 0
 
-baseurl: /abbia
+baseurl: /abbia/
