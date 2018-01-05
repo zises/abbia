@@ -38,7 +38,7 @@ $on-laptop:        800px;
 @import "mobile";
 
 body {
-  background-color: white;
+  background-color: #e5e3e6;
   font-family: $base-font-family;
 }
 
@@ -63,7 +63,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   height: 86vh;
   img {
     max-width: 20vw;
