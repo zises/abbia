@@ -56,27 +56,34 @@ a {
 }
 
 
-// Menu
-.menu-items {
-  text-transform: uppercase;
-  padding: 0 2em;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: left;
-  height: 86vh;
+// Left Menu
+.desktop-sidebar {
+  padding: 2em 2em;
   img {
     max-width: 20vw;
   }
+}
+.abbia-logo {
+  height: 26vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-items {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
+  height: 60vh;
   li {
-    margin-bottom: 2em;
     font-size: 2.5vw;
   }
   li:first-child {
-    margin-top: 1vh;
+    margin-top: 5vh;
   }
-  li:not(:last-child) {
-    margin-bottom: 2vh;
+  li:last-child {
+    margin-bottom: 3vh;
   }
   span {
     font-weight: 900;
@@ -153,14 +160,23 @@ a {
   }
 }
 
+.triangle1-wrapper:hover {
+  .tri-text-1 {
+    color: white;
+  }
+}
+
+.triangle2-wrapper:hover {
+  .tri-text-2 {
+    color: white;
+  }
+}
+
 .tri-text-1 {
   left: 13.5em;
   bottom: 2em;
   text-align: right;
-}
-.tri-text-2 {
-  right: 10em;
-  top: 2em;
+  color: transparent;
 }
 .triangle1 {
   background: url("../images/worker.png");
@@ -169,7 +185,11 @@ a {
   background-size: cover;
   float: left;
 }
-
+.tri-text-2 {
+  right: 10em;
+  top: 2em;
+  color: transparent;
+}
 .triangle2 {
   background: url("../images/bags.png") no-repeat center center fixed;
   background-size: cover;
