@@ -1,5 +1,5 @@
 <div class="columns is-gapless is-hidden-touch">
-  {% include desktop-sidebar.html %}
+  {% include desktop-menu.html %}
   <div class="column is-7">
     <div class="holder">
       <a href="{{site.baseurl}}learn-more" class="triangle1-wrapper">
@@ -18,16 +18,5 @@
       </a>
     </div>
   </div>
-  <div class="column is-2 is-hidden-touch">
-      <div class="sidebar-photos">
-        <a href="http://www.google.com" target="_blank">
-          <div class="triangle3 triangle"></div>
-        </a>
-        <div class="triangle4 triangle"></div>
-      </div>
-      <div class="home-column social-column">
-        {% include social.html %}
-      </div>
-
-  </div>
+  {% include desktop-sidebar.html %}
 </div>

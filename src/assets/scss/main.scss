@@ -36,6 +36,7 @@ $on-laptop:        800px;
 
 @import "bulma";
 @import "mobile";
+@import "desktop-sidebars";
 
 body {
   background-color: #e5e3e6;
@@ -55,74 +56,6 @@ a {
     }
 }
 
-
-// Left Menu
-.desktop-sidebar {
-  padding: 2em 2em;
-  img {
-    max-width: 20vw;
-  }
-}
-.abbia-logo {
-  height: 26vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu-items {
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: left;
-  height: 60vh;
-  li {
-    font-size: 2.5vw;
-  }
-  li:first-child {
-    margin-top: 5vh;
-  }
-  li:last-child {
-    margin-bottom: 3vh;
-  }
-  span {
-    font-weight: 900;
-  }
-}
-// Home Right Sidebar
-
-.sidebar-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.sidebar-photos {
-  height: 26vh;
-}
-.social-column {
-  height: 60vh;
-  justify-content: space-around!important;
-}
-.social {
-  background: #4C4E5A;
-  border-radius: 100%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
-  color: #fff;
-  display: table-cell;
-  font-size: 3.4vw;
-  height: 60px;
-  padding: 1em;
-  text-align: center;
-  transition: .5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-}
-.social:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
 // Home Page
 .home-column {
   display: flex;
