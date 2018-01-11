@@ -1,8 +1,14 @@
-<div class="column is-3 home-column is-hidden-touch desktop-sidebar">
-  <div class="abbia-logo">
-    <a href="{{site.baseurl}}"><img src="{{site.baseurl}}assets/images/black_logo.png" alt=""></a>
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left desktop-menu">
+  <div class="pushy-content">
+    <div class="abbia-logo">
+      <a href="{{site.baseurl}}"><img src="{{site.baseurl}}assets/images/black_logo.png" alt=""></a>
+    </div>
+    <ul class="menu-items">
+      {% include menu-items.html %}
+    </ul>
   </div>
-  <ul class="menu-items">
-    {% include menu-items.html %}
-  </ul>
-</div>
+</nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay"></div>

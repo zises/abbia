@@ -1,9 +1,34 @@
 // Desktop Menu
-.desktop-sidebar {
+.desktop-menu {
   padding: 2em 2em;
   img {
     max-width: 20vw;
   }
+}
+
+.menu-btn {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  border: none;
+  background: transparent;
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
 }
 .abbia-logo {
   height: 26vh;
@@ -33,7 +58,26 @@
 }
 
 // Home Right Sidebar
-
+.desktop-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-top {
+  div {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    color: white;
+    span {
+      font-weight: 900;
+    }
+  }
+  .contact-us {
+    background: #4C4F5A;
+  }
+}
 .sidebar-social {
   display: flex;
   justify-content: center;
@@ -48,20 +92,24 @@
   justify-content: space-around!important;
 }
 .social {
-  background: #4C4E5A;
-  border-radius: 100%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
   color: #fff;
-  display: table-cell;
   font-size: 3.4vw;
-  height: 60px;
   padding: 1em;
   text-align: center;
   transition: .5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  flex: 1;
+}
+.social-facebook {
+  background: #646E84;
+}
+.social-instagram {
+  background: #AFB2B9;
+}
+.social-email {
+  background: #CECECC;
 }
 .social:hover {
   background: rgba(0, 0, 0, 0.6);

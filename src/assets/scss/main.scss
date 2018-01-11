@@ -37,6 +37,7 @@ $on-laptop:        800px;
 @import "bulma";
 @import "mobile";
 @import "desktop-sidebars";
+@import "pushy";
 
 body {
   background-color: #e5e3e6;
@@ -52,7 +53,7 @@ a {
 
 @media screen and (min-width: $desktop) {
     body {
-        padding: 7vh 0;
+      //padding: 7vh 0;
     }
 }
 
@@ -66,6 +67,7 @@ a {
 
 .holder {
   position: relative;
+  height: 100vh;
 }
 .triangle {
   height: 100%;
@@ -142,9 +144,6 @@ a {
   clip-path: polygon(100% 100%, 0% 100%, 100% 0);
   background-size: cover;
 }
-.holder {
-  height: 86vh;
-  max-width: 100%;
-}
+
 
 @import "pages";
