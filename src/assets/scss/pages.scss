@@ -10,20 +10,25 @@
   }
 }
 
-.text-wrapper {
+.page-wrapper {
   background-color: white;
-  p {
-    margin-bottom: 1em;
+  .learn-header-img {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+    object-position: 0 0;
   }
 }
 
-.text {
-  position: absolute;
-  width: 30vw;
-  right: 5vw;
-  top: 24vh;
+.text-wrapper {
+  background-color: white;
   h1 {
-    margin-bottom: 6vh;
+    span {
+      font-weight: 900;
+    }
   }
-
+  p {
+    margin-bottom: 1em;
+    margin-left: 10vw
+  }
 }

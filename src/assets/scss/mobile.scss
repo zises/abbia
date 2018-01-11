@@ -47,19 +47,30 @@
   .container {
     width: 100%;
   }
-}
-.footer-social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  .social {
-    font-size: 4.5vw!important;
-    height: 50px;
-    width: 50px;
-    padding: .9em;
-    margin-bottom: 0!important;
+  .footer-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .social {
+      font-size: 8.5vw!important;
+      margin-bottom: 0!important;
+      height: 12vh;
+    }
   }
+}
 
+.mobile-menu-wrapper {
+  .footer-social {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    .container {
+      width: 100%;
+    }
+  }
+  .social {
+    font-size: 3.5vw!important;
+  }
 }
 // Mobile menu
 a.navbar-item:hover {
