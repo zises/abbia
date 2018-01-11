@@ -6672,43 +6672,67 @@ a.navbar-item:hover {
 .mobile-images {
   line-height: 0px; }
 
-body {
-  background-color: #e5e3e6;
-  font-family: "Avenir", Helvetica, Arial, sans-serif; }
+.desktop-menu {
+  padding: 2em 2em; }
+  .desktop-menu img {
+    max-width: 20vw; }
 
-.columns, .navbar, .footer {
-  background-color: #E5E3E6; }
+.menu-btn {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  border: none;
+  background: transparent; }
+  .menu-btn span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
 
-a {
-  color: #4A4A4A; }
-
-@media screen and (min-width: 1024px) {
-  body {
-    padding: 7vh 0; } }
+.abbia-logo {
+  height: 26vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .menu-items {
   text-transform: uppercase;
-  padding: 0 2em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   align-items: left;
-  height: 86vh; }
-  .menu-items img {
-    max-width: 20vw; }
+  height: 60vh; }
   .menu-items li {
-    margin-bottom: 2em;
     font-size: 2.5vw; }
   .menu-items li:first-child {
-    margin-top: 1vh; }
-  .menu-items li:nth-child(2) {
-    margin-top: 9.5vh; }
-  .menu-items li:not(:last-child) {
-    margin-bottom: 2vh; }
+    margin-top: 5vh; }
   .menu-items li:last-child {
-    margin-bottom: 4vh; }
+    margin-bottom: 3vh; }
   .menu-items span {
     font-weight: 900; }
+
+.desktop-sidebar {
+  display: flex;
+  flex-direction: column; }
+
+.sidebar-top div {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  color: white; }
+  .sidebar-top div span {
+    font-weight: 900; }
+
+.sidebar-top .contact-us {
+  background: #4C4F5A; }
 
 .sidebar-social {
   display: flex;
@@ -6724,23 +6748,172 @@ a {
   justify-content: space-around !important; }
 
 .social {
-  background: #4C4E5A;
-  border-radius: 100%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
   color: #fff;
-  display: table-cell;
   font-size: 3.4vw;
-  height: 60px;
   padding: 1em;
   text-align: center;
   transition: .5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; }
+  flex: 1; }
+
+.social-facebook {
+  background: #646E84; }
+
+.social-instagram {
+  background: #AFB2B9; }
+
+.social-email {
+  background: #CECECC; }
 
 .social:hover {
   background: rgba(0, 0, 0, 0.6); }
+
+/*! Pushy - v1.1.0 - 2017-1-30
+* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
+* https://github.com/christophery/pushy/
+* by Christopher Yee */
+/* Menu Appearance */
+.pushy {
+  position: fixed;
+  width: 30vw;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  background: #e5e3e6;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */ }
+  .pushy a:hover {
+    color: #FFF; }
+  .pushy ul:first-child {
+    margin-top: 10px; }
+  .pushy.pushy-left {
+    left: 0; }
+  .pushy.pushy-right {
+    right: 0; }
+
+.pushy-content {
+  visibility: hidden; }
+
+/* Menu Movement */
+.pushy-left {
+  transform: translate3d(-30vw, 0, 0); }
+
+.pushy-open-left #container,
+.pushy-open-left .push {
+  transform: translate3d(30vw, 0, 0); }
+
+.pushy-right {
+  transform: translate3d(30vw, 0, 0); }
+
+.pushy-open-right #container,
+.pushy-open-right .push {
+  transform: translate3d(-30vw, 0, 0); }
+
+.pushy-open-left .pushy,
+.pushy-open-right .pushy {
+  transform: translate3d(0, 0, 0); }
+
+.pushy-open-left .pushy-content,
+.pushy-open-right .pushy-content {
+  visibility: visible; }
+
+/* Menu Transitions */
+#container,
+.pushy,
+.push {
+  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
+
+.pushy-content {
+  transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
+
+/* Site Overlay */
+.site-overlay {
+  display: none; }
+
+.pushy-open-left .site-overlay,
+.pushy-open-right .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fade 500ms; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Submenu Appearance */
+.pushy-submenu {
+  /* Submenu Buttons */
+  /* Submenu Icon */ }
+  .pushy-submenu ul {
+    padding-left: 15px;
+    transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out; }
+    .pushy-submenu ul .pushy-link {
+      transition: opacity 0.2s ease-in-out; }
+  .pushy-submenu button {
+    width: 100%;
+    color: #b3b3b1;
+    padding: 15px 30px;
+    text-align: left;
+    background: transparent;
+    border: 0; }
+    .pushy-submenu button:hover {
+      color: #FFF; }
+  .pushy-submenu > a,
+  .pushy-submenu > button {
+    position: relative; }
+  .pushy-submenu > a::after,
+  .pushy-submenu > button::after {
+    content: '';
+    display: block;
+    height: 11px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    background: url("../img/arrow.svg") no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.2s; }
+
+/* Submenu Movement */
+.pushy-submenu-closed ul {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.pushy-submenu-closed .pushy-link {
+  opacity: 0; }
+
+.pushy-submenu-open {
+  /* Submenu Icon */ }
+  .pushy-submenu-open ul {
+    max-height: 1000px;
+    visibility: visible; }
+  .pushy-submenu-open .pushy-link {
+    opacity: 1; }
+  .pushy-submenu-open a::after,
+  .pushy-submenu-open button::after {
+    transform: translateY(-50%) rotate(90deg); }
+
+body {
+  background-color: #e5e3e6;
+  font-family: "Avenir", Helvetica, Arial, sans-serif; }
+
+.columns, .navbar, .footer {
+  background-color: #E5E3E6; }
+
+a {
+  color: #4A4A4A; }
 
 .home-column {
   display: flex;
@@ -6749,7 +6922,8 @@ a {
   justify-content: space-between; }
 
 .holder {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 .triangle {
   height: 100%;
@@ -6771,14 +6945,17 @@ a {
   .tri-text p {
     font-size: 1.5vw; }
 
+.triangle1-wrapper:hover .tri-text-1 {
+  color: white; }
+
+.triangle2-wrapper:hover .tri-text-2 {
+  color: white; }
+
 .tri-text-1 {
   left: 13.5em;
   bottom: 2em;
-  text-align: right; }
-
-.tri-text-2 {
-  right: 10em;
-  top: 2em; }
+  text-align: right;
+  color: transparent; }
 
 .triangle1 {
   background: url("../images/worker.png");
@@ -6786,6 +6963,11 @@ a {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
   background-size: cover;
   float: left; }
+
+.tri-text-2 {
+  right: 10em;
+  top: 2em;
+  color: transparent; }
 
 .triangle2 {
   background: url("../images/bags.png") no-repeat center center fixed;
@@ -6805,10 +6987,6 @@ a {
   -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0);
   clip-path: polygon(100% 100%, 0% 100%, 100% 0);
   background-size: cover; }
-
-.holder {
-  height: 86vh;
-  max-width: 100%; }
 
 .page-triangle {
   background: url("../images/learn.jpeg");
