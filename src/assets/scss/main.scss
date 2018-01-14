@@ -87,6 +87,9 @@ a {
   position: absolute;
   z-index: 1;
   color: white;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
   h2 {
     text-transform: uppercase;
     font-size: 4.5vw;
@@ -102,17 +105,20 @@ a {
 .triangle1-wrapper:hover {
   .tri-text-1 {
     color: white;
+    right: 13.5em;
   }
 }
 
 .triangle2-wrapper:hover {
   .tri-text-2 {
     color: white;
+    left: 10em;
   }
 }
 
 .tri-text-1 {
-  left: 13.5em;
+  //left: 13.5em;
+  right: -13.4em;
   bottom: 2em;
   text-align: right;
   color: transparent;
@@ -125,7 +131,7 @@ a {
   float: left;
 }
 .tri-text-2 {
-  right: 10em;
+  left: -10em;
   top: 2em;
   color: transparent;
 }
