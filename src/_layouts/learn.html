@@ -1,29 +1,52 @@
----
-layout: default
----
-<div class="is-hidden-desktop">
-  {% include mobile-menu.html %}
-  <div class="column is-12">
-    <img src="{{site.baseurl}}assets/images/img27.jpg" alt="" class="learn-header-img">
-    <div class="column is-10 is-offset-2 text-wrapper">
-      <div class="text has-text-black">
-        {{content}}
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include openmenu.html %}
+
+    <div class="" id="container">
+      <div class="is-hidden-desktop">
+        {% include mobile-menu.html %}
+        <div class="column is-12">
+          <img src="{{site.baseurl}}assets/images/img27.jpg" alt="" class="learn-header-img">
+          <div class="column is-10 is-offset-2 text-wrapper">
+            <div class="text has-text-black">
+              {{content}}
+            </div>
+          </div>
+        </div>
+
+        {% include footer.html %}
+      </div>
+
+      <div class="page-wrapper columns is-hidden-touch">
+        <div class="column is-12">
+          <img src="{{site.baseurl}}assets/images/img27.jpg" alt="" class="learn-header-img">
+          <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
+            <div class="text has-text-black">
+              {{content}}
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-  </div>
 
-  {% include footer.html %}
-</div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"
+    </script>
+  <!-- JS -->
+  <!-- inject:js -->
+  <!-- endinject -->
 
-<div class="page-wrapper columns is-hidden-touch">
-  <div class="column is-12">
-    <img src="{{site.baseurl}}assets/images/img27.jpg" alt="" class="learn-header-img">
-    <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
-      <div class="text has-text-black">
-        {{content}}
-      </div>
-    </div>
-  </div>
+  </body>
 
-
-</div>
+</html>
