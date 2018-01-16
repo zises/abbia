@@ -1,5 +1,5 @@
 ---
-layout: learn
+layout: pages
 permalink: /learn-more/
 title: Learn More
 ---
