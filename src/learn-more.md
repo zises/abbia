@@ -2,6 +2,17 @@
 layout: pages
 permalink: /learn-more/
 title: Learn More
+header_img: img27.jpg
+section1imgs:
+  img1:
+  img2:
+  img3:
+  img4:
+section2imgs:
+  img1:
+  img2:
+  img3:
+  img4:
 ---
 
 <h1 class="is-uppercase is-size-1"><span>our head farmer:</span> Robert Mbilongoe</h1>

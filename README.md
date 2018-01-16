@@ -14,6 +14,10 @@ running 'gulp build --prod' compiles, concatenates, minifys, and gzips css and j
 
 Add a new markdown file to the 'src' directory. Make sure it has the 'pages' layout. Use the 'default' layout to make a another page like the home page
 
+### Adding Images
+
+Add them to 'src/assets/images'
+
 ```
 ---
 layout: pages
