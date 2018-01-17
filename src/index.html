@@ -1,5 +1,7 @@
 ---
 layout: default
+link1: learn-more
+link2: test
 ---
 
 <button class="button menu-btn is-hidden-touch">
@@ -10,7 +12,7 @@ layout: default
   {% include mobile-menu.html %}
   <div class="mobile-images">
     <div class="top-images">
-      <a href="/abbia/learn-more">
+      <a href="{{site.baseurl}}{{page.link1}}">
         <div class="tri-text-1-mobile tri-text-mobile">
           <h2><span>Learn</span> More</h2>
         </div>
@@ -22,7 +24,7 @@ layout: default
       <div class="triangle2 triangle"></div>
     </div>
     <div class="top-images">
-      <a href="http://www.google.com" target="_blank">
+      <a href="{{site.baseurl}}{{page.link1}}">
         <div class="tri-text-3-mobile tri-text-mobile">
           <h2><span>Give </span>Feedback</h2>
         </div>
