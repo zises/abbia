@@ -20,8 +20,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+
+
 $text-color:       #111;
 $background-color: #E5E3E6;
+
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -60,7 +63,7 @@ a {
 // Home Page
 
 .toggle-logo {
-  max-width: 150px;
+  max-width: 15vw;
 }
 .home-column {
   display: flex;
@@ -105,21 +108,21 @@ a {
 .triangle1-wrapper:hover {
   .tri-text-1 {
     color: white;
-    right: 13.5em;
+    right: 18vw;
   }
 }
 
 .triangle2-wrapper:hover {
   .tri-text-2 {
     color: white;
-    left: 10em;
+    left: 18vw;
   }
 }
 
 .tri-text-1 {
   //left: 13.5em;
   right: -13.4em;
-  bottom: 2em;
+  bottom: 3em;
   text-align: right;
   color: transparent;
 }
@@ -132,7 +135,7 @@ a {
 }
 .tri-text-2 {
   left: -10em;
-  top: 2em;
+  top: 4em;
   color: transparent;
 }
 .triangle2 {

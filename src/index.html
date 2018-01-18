@@ -2,12 +2,15 @@
 layout: default
 link1: learn-more
 link2: test
+link3: #
+link4: #
 ---
 
 <button class="button menu-btn is-hidden-touch">
   <img src="{{site.baseurl}}assets/images/black_logo.png" alt="" class="toggle-logo"></a>
 </button>
 
+<!-- Start mobile page layout -->
 <div class="is-hidden-desktop">
   {% include mobile-menu.html %}
   <div class="mobile-images">
@@ -18,27 +21,32 @@ link2: test
         </div>
         <div class="triangle1 triangle"></div>
       </a>
-      <div class="tri-text-2-mobile tri-text-mobile">
-        <h2><span>Sample</span> Beans</h2>
-      </div>
-      <div class="triangle2 triangle"></div>
+      <a href="{{site.baseurl}}{{page.link2}}">
+        <div class="tri-text-2-mobile tri-text-mobile">
+          <h2><span>Sample</span> Beans</h2>
+        </div>
+        <div class="triangle2 triangle"></div>
+      </a>
     </div>
     <div class="top-images">
-      <a href="{{site.baseurl}}{{page.link1}}">
+      <a href="{{site.baseurl}}{{page.link4}}">
         <div class="tri-text-3-mobile tri-text-mobile">
           <h2><span>Give </span>Feedback</h2>
         </div>
         <div class="triangle3 triangle">
         </div>
       </a>
-      <div class="tri-text-4-mobile tri-text-mobile">
-        <h2><span>Contact </span>Us</h2>
-      </div>
-      <div class="triangle4 triangle">
-
+      <a href="{{site.baseurl}}{{page.link3}}">
+        <div class="tri-text-4-mobile tri-text-mobile">
+          <h2><span>Contact </span>Us</h2>
+        </div>
+        <div class="triangle4 triangle">
+      </a>
       </div>
     </div>
   </div>
   {% include footer.html %}
 </div>
+
+<!-- End mobile page layout -->
 {% include desktop-home.html %}

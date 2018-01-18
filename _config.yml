@@ -16,10 +16,10 @@ author:
   name: Elizabeth Simonian
   email: esimonian16@gmail.com
   uri: Abbia
-  bio:
-  twitter:
-  github:
 
+facebook: www.facebook.com
+instagram: www.instagram.com
+email:
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
 future: true

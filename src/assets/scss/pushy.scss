@@ -49,9 +49,9 @@ $menu_width: 30vw !default;
 .pushy-open-left{
     #container,
     .push{
-        -webkit-transform: translate3d( $menu_width ,0,0);
-        -ms-transform: translate3d( $menu_width ,0,0);
-        transform: translate3d( $menu_width ,0,0);
+      //  -webkit-transform: translate3d( $menu_width ,0,0);
+        //-ms-transform: translate3d( $menu_width ,0,0);
+      //  transform: translate3d( $menu_width ,0,0);
     }
 }
 
