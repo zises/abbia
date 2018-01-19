@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Abbia
 description: Specialty Cocoa Beans from Cameroon
-url: http://cocoa.cm
+url: http://zises.github.io/abbia/
 baseurl: /
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
