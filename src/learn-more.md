@@ -28,7 +28,9 @@ Mr. Mbilongoe learned cocoa farming and the art of proper fermentation for cocoa
 Mr. Mbilongoe is married with 8 children and 10 grandchildren. 
 
 {% contentfor section2 %}
-<h1 class="is-uppercase is-size-1"><span>Fine Cocoa in Cameroon?</span> Yes, indeed!</h1>
+
+
+<h1 class="is-uppercase is-size-1"><span>Fine Cocoa from Cameroon?</span> Yes!</h1>
 The small village of Manganga is where we are planting our flag.
 
 Properly cultivated, well-fermented and carefully dried fine cocoa has been completely infeasible in Cameroon for more than three decades. The bulk cocoa market simply dominates all cocoa transactions and market demand for well-fermented quality beans is nil. The infrastructure for quality beans simply does not exist. But 30+ years ago, Cameroon supplied high-end cocoa to European markets, primarily France and Germany. Mr. Mbilongoe saw his grandfather, as well as his father, produce very high quality beans prior to the 1980s. These beans were fermented in proper wood boxes lined with banana leaves, and slow dried on elevated wooden racks. 
