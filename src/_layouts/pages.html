@@ -6,10 +6,40 @@
       <div class="is-hidden-desktop">
         {% include mobile-menu.html %}
         <div class="column is-12">
-          <img src="{{site.baseurl}}assets/images/{{page.header_img}}" alt="" class="learn-header-img">
-          <div class="column is-10 is-offset-2 text-wrapper">
+          <img src="{{site.baseurl}}assets/images/img27.jpg" alt="" class="learn-header-img">
+          <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
             <div class="text has-text-black">
               {{content}}
+            </div>
+          </div>
+          <div class="learn-pics-middle">
+            {% for img in page.section2imgs %}
+              <div class="learn-pic"><img src="{{site.baseurl}}assets/images/{{img}}"/></div>
+            {% endfor %}
+          </div>
+          <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
+            <div class="text has-text-black">
+              {% contentblock section2 %}
+            </div>
+          </div>
+          <div class="learn-pics-middle">
+            {% for img in page.section3imgs %}
+              <div class="learn-pic"><img src="{{site.baseurl}}assets/images/{{img}}"/></div>
+            {% endfor %}
+          </div>
+          <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
+            <div class="text has-text-black">
+              {% contentblock section3 %}
+            </div>
+          </div>
+          <div class="learn-pics-middle">
+            {% for img in page.section4imgs %}
+              <div class="learn-pic"><img src="{{site.baseurl}}assets/images/{{img}}"/></div>
+            {% endfor %}
+          </div>
+          <div class="column is-10-desktop is-offset-2-desktop text-wrapper">
+            <div class="text has-text-black">
+              {% contentblock section4 %}
             </div>
           </div>
         </div>
