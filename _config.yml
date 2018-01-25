@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Abbia
 description: Specialty Cocoa Beans from Cameroon
-url: http://zises.github.io/abbia/
+url: http://cocoa.cm
 baseurl: /
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -17,8 +17,8 @@ author:
   email: Zises@jigoro.org
   uri: cocoa.cm
 
-facebook: www.facebook.com
-instagram: www.instagram.com/abbiacocoa
+facebook: http://www.facebook.com/abbiacocoa
+instagram: http://www.instagram.com/abbiacocoa
 email: zises@jigoro.org
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
