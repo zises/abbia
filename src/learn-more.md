@@ -2,8 +2,8 @@
 layout: pages
 permalink: /learn-more/
 title: Learn More
-header_img: img3.jpg
-header_img_mobile: farmer.jpg
+header_img: farmer.jpg
+header_img_mobile: img3.jpg
 section2imgs:
   - img1.jpg
   - img2.jpg
