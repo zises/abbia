@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: /purchase/
+permalink: /contact/
 title: Purchase Abbia Cocoa
 header_img: img_38_blur.png
 
