@@ -2,12 +2,11 @@
 layout: pages
 permalink: /purchase/
 title: Purchase Abbia Cocoa
-header_img: img3.jpg
+header_img: img_38_blur.png
 
 ---
 
-<h1 class="is-uppercase is-size-1"><span>Purchase Abbia Beans:</span> Not quite yet...</h1>
-You're getting ahead of us, here. We will be taking orders starting in March for November delivery. 
+<h1 class="is-uppercase is-size-1"><span>Purchase:</span> Delivery today or November...</h1>
+We have a limited quantity of cocoa beans available for purchase today and will beging to take orders shortly for November delivery. 
 
-In the meantime, have you [tested a sample of our beans?](/beans) Give us a call or a quick email tell us what you think. 
-
+If you are interested, please [shoot a quick email here](mailto:zises@jigoro.org). 
