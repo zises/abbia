@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: /beans/
+permalink: /forms/
 title: About Our Beans
 header_img: img_46.jpg
 header_img_mobile: img_46.jpg
@@ -17,8 +17,6 @@ We have a supply of cocoa beans available for sample. Please shoot us a note, or
 {% contentfor section2 %}
 <h1 class="is-uppercase is-size-1"><span>Organics & Fair Trade:</span> Where do we fit?</h1>
 Mr. Mbilongoe and all of the other local Manganga farmers do not use any chemicals to fertilize or treat their farm in any way. First, they consider it a waste of money: yields do not increase. Second, these farmers have no desire to pollute or destroy their soil and water with chemicals. Nevertheless, the cost to become 'certified' organic is too high at this juncture, and there is no certification for their traditional farming practices. 
-
-All of our beans are inspected and analyzed by a third party. Our recent [report can be found here](../analysisreport.jpg).
 {% endcontentfor %}
 
 {% contentfor section2 %}

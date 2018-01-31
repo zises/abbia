@@ -3,7 +3,7 @@ layout: pages
 permalink: /contact/
 title: Purchase Abbia Cocoa
 header_img: img_38_blur.png
-
+header_img_mobile: img_38_blur.png
 ---
 
 <h1 class="is-uppercase is-size-1"><span>Purchase:</span> Delivery today or November...</h1>

@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: /contact/
+permalink: /xcontact/
 title: Contact Us
 header_img: img1.jpg
 section2imgs:

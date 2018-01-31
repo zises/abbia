@@ -15,7 +15,7 @@ section3imgs:
 <h1 class="is-uppercase is-size-1"><span>Our Head Farmer:</span> Robert Mbilongoe</h1>
 Robert Mbilongoe is a treasure. 
 
-He is our lead cocoa farmer and fermentation expert and a third generation cocoa farmer. Mr. Mbilongoe was born and raised on his family's farm in Manganga, a small village in Cameroon, west Africa. His family has been cultivating cocoa since the early German colonization (1884-1915) when cocoa was first introduced to Cameroon. In addition to cocoa, his farm produces plantains/bananas, mangoes, plums, mandarin oranges, avocados and wild fruit.
+He is our lead cocoa farmer and fermentation expert and a third generation cocoa farmer. Mr. Mbilongoe was born and raised on his family's farm in Manganga, a small village in Cameroon, central Africa. His family has been cultivating cocoa since the early German colonization (1884-1915) when cocoa was first introduced to Cameroon. In addition to cocoa, his farm produces plantains/bananas, mangoes, plums, mandarin oranges, avocados and wild fruit.
 
 Mr. Mbilongoe learned the art of proper cocoa fermentation from his grandfather who settled the farm at onset of German colonization. He continued to learn from his father, who lived to be 105 years old. Mr. Mbilongoe is a well-educated former banker, as well as the former mayor for his region (an area larger than just the small village). His children are all educated and his grandchildren all attend school. The same education ethic is true for all the families in his village.
 
@@ -41,5 +41,5 @@ Abbia is a game. Background and details to follow...
 
 {% contentfor section4 %}
 <h1 class="is-uppercase is-size-1"><span>Our beginnings:</span> Jigoro Investments, NFP</h1>
-Abbia Cocoa was started with seed money from Jigoro Investments NFP, a not-for-profit 501(c)3 dedicated to sustainable, ethical investments in Cameroon and other under-developed sub-Saharan countries. Please go to [Jigoro.org](http://jigoro.org) more more information about their work. In addition to supporting the construction of fermentation boxes, drying racks and storage houses, much of Jigoro's focus for the past year has been on logistics: to build a parallel infrastructure to allow quality beans to be produced and shipped from the heart of industrialized cocoa production.
+Abbia Cocoa was started with seed money from [Jigoro Investments NFP](http://jigoro.org), a not-for-profit 501(c)3 dedicated to sustainable, ethical investments in Cameroon and other under-developed sub-Saharan countries. Please go to [Jigoro.org](http://jigoro.org) more more information about their work. In addition to supporting the construction of fermentation boxes, drying racks and storage houses, much of Jigoro's focus for the past year has been on logistics: to build a parallel infrastructure to allow quality beans to be produced and shipped from the heart of industrialized cocoa production.
 {% endcontentfor %}
