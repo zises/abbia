@@ -7,10 +7,8 @@ header_img_mobile: img3.jpg
 section2imgs:
   - img_15.jpg
   - img_44.jpg
-section3imgs:
-  - img_42.jpg
   - img_38_blur.png
-section4imgs:
+section3imgs:
   - abbia1.jpg
   - abbia2.jpg
   - abbia3.jpg
@@ -43,7 +41,7 @@ Mr. Mbilongoe is excited to return his farm to quality production.
 
 {% contentfor section3 %}
 <h1 class="is-uppercase is-size-1"><span>Abbia:</span> What does it mean?</h1>
-Abbia was a popular gambling game played in Cameroon for centuries through the mid 1950’s. The chips were made from nuts of the native Elan tree. Men engraved images on the small nuts to represent aspects of their daily lives, and used them as betting chips. Each engraved nut represents an object, land, human, or spiritual event. The gambling game would often last an entire night. When German colonists arrived in the late 19th century, they forbid the game due to its excessive, and sometimes tragic, results. 
+Abbia was a popular gambling game played in Cameroon for centuries through the mid 1950’s. The chips were made from nuts of the native Elan tree. Men engraved images on the small nuts to represent aspects of their daily lives, and used them as betting chips. Each engraved nut represents an object, land, human, or spiritual event. The gambling game would often last an entire night. When German colonists arrived in the late 19th century, they forbade the game due to its excessive, and sometimes tragic, results. 
 
 Engraved chips dating from the visits of early Portuguese explorers in the 1700s, have been found. The Abbia game is one of the few artifacts that remain of Cameroon's indigenous culture and represents an important aspect of local history.
 
