@@ -21,7 +21,7 @@ We have a supply of cocoa beans available for sample. Please shoot us a note, or
       <label>Message</label>
       <input type="text" name="_message" class="form-control" rows="6" placeholder="Your message here"><br>
       <input type="hidden" name="save" value="contact">
-      <input type="submit" class="button btn-default" value="Submit"></button>
+      <input type="submit" class="button is-outlined btn-default" value="Submit"></button>
   <input type="hidden" name="_subject" value="New submission!">
   <input type="hidden" name="_next" value="{{ site.github.url }}">
   <input type="text" name="_gotcha" style="display:none">
