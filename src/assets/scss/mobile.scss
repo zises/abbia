@@ -24,12 +24,12 @@
 
 .tri-text-3-mobile {
   left: 1vh;
-  bottom: 51vh;
+  top: 49vh;
   text-align: right;
 }
 .tri-text-4-mobile {
   right: 1vw;
-  bottom: 16vh;
+  top: 84vh;
 }
 
 .top-images {
@@ -89,6 +89,7 @@ a.navbar-item:hover {
   justify-content: space-between;
   align-items: center;
   height: 6vh;
+  min-height: 6vh;
 }
 .mobile-menu-wrapper {
   width: 100%;
