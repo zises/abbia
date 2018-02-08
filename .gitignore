@@ -3,7 +3,7 @@ Gemfile.lock
 # Ignore hidden folders
 # This takes care of .tmp, .sass-cache, and many others
 .*/
-
+/node_modules
 # OSX
 ._*
 .AppleDouble
