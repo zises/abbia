@@ -13,7 +13,7 @@ We have a supply of cocoa beans available for sample. Please shoot us a note, or
 
 {% contentfor section2 %}
 
-<form action="https://formspree.io/zises@jigoro.org" method="POST" id="contact_form">
+<form action="https://formspree.io/mdgelpox" method="POST" id="contact_form">
   <label>Name</label> <input type="text" name="_name" placeholder="Name" class="form-control"><br>
   <label>Email Address</label> <input type="email" name="_replyto" placeholder="email@domain.com" class="form-control"><br>
   <label>Phone Number</label>
