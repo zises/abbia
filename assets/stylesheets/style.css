@@ -6504,12 +6504,12 @@ label.panel-block {
 
 .tri-text-3-mobile {
   left: 1vh;
-  bottom: 51vh;
+  top: 49vh;
   text-align: right; }
 
 .tri-text-4-mobile {
   right: 1vw;
-  bottom: 16vh; }
+  top: 84vh; }
 
 .top-images {
   height: 40vh; }
@@ -6549,13 +6549,14 @@ a.navbar-item:hover {
   float: right; }
   .navbar-brand img {
     width: auto;
-    max-height: 2.4rem; }
+    max-height: 4.5vh; }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6vh; }
+  height: 6vh;
+  min-height: 6vh; }
 
 .mobile-menu-wrapper {
   width: 100%; }
@@ -6604,7 +6605,7 @@ a.navbar-item:hover {
 #menuToggle .span {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   background: black;
