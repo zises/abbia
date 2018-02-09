@@ -12,7 +12,7 @@ We have a limited quantity of cocoa beans available for purchase today and will 
 If you are interested, please fill out the form below.
 
 
-<form action="https://formspree.io/mdgelpox" method="POST" id="contact_form">
+<form action="https://formspree.io/modenpnx" method="POST" id="contact_form">
   <label>Name</label> <input type="text" name="_name" placeholder="Name" class="form-control"><br>
   <label>Email Address</label> <input type="email" name="_replyto" placeholder="email@domain.com" class="form-control"><br>
   <label>Phone Number</label>
